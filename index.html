@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Marcos Bernardo Jr</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Framer Motion -->
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="light" data-lang="pt">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Marcos Bernardo Jr</div>
+            <ul class="nav-links">
+                <li><a href="#home" data-lang-key="nav.home">Início</a></li>
+                <li><a href="#projects" data-lang-key="nav.projects">Projetos</a></li>
+                <li><a href="#experience" data-lang-key="nav.experience">Experiência</a></li>
+                <li><a href="#contact" data-lang-key="nav.contact">Contato</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="lang-toggle" aria-label="Toggle language">
+                    <i class="fas fa-globe"></i>
+                    <span data-lang-key="lang.current">PT</span>
+                </button>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1><span data-lang-key="hero.greeting">Olá, eu sou</span> <span class="highlight">Marcos Bernardo Jr</span></h1>
+            <p class="subtitle" data-lang-key="hero.title">Desenvolvedor Full Stack</p>
+            <p class="description" data-lang-key="hero.description">Desenvolvo aplicações web modernas com foco em experiência do usuário e código limpo. Especializado em Ruby on Rails e React.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary" data-lang-key="hero.viewProjects">Ver Projetos</a>
+                <a href="#contact" class="btn secondary" data-lang-key="hero.contactMe">Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 data-lang-key="projects.title">Projetos</h2>
+        <div class="projects-grid">
+            <!-- Maya -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(45deg, #FF6B6B, #FF8E8E);">
+                    <i class="fas fa-birthday-cake"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title" data-lang-key="projects.maya.title">Maya - Gestão para Confeiteiros</h3>
+                    <p class="project-description" data-lang-key="projects.maya.description">Plataforma completa de gestão para confeiteiros, desenvolvida com Rails, React e MUI. Implementação de Sidekiq para processamento assíncrono e otimização de performance.</p>
+                    <div class="project-tech">
+                        <span>Rails</span>
+                        <span>React</span>
+                        <span>MUI</span>
+                        <span>Sidekiq</span>
+                    </div>
+                    <p class="project-period">2022 - Presente</p>
+                </div>
+            </div>
+
+            <!-- Addolcire -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(45deg, #4ECDC4, #45B7AF);">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title" data-lang-key="projects.addolcire.title">Addolcire - Educação para Confeiteiros</h3>
+                    <p class="project-description" data-lang-key="projects.addolcire.description">Plataforma educacional especializada para confeiteiros, utilizando Semantic UI para uma interface intuitiva e responsiva.</p>
+                    <div class="project-tech">
+                        <span>Rails</span>
+                        <span>React</span>
+                        <span>Semantic UI</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <p class="project-period">2022 - Presente</p>
+                </div>
+            </div>
+
+            <!-- ApoloIBFT -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(45deg, #6C5CE7, #8E7CF7);">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title" data-lang-key="projects.apolo.title">ApoloIBFT - Treinamento para Terapeutas</h3>
+                    <p class="project-description" data-lang-key="projects.apolo.description">Sistema de treinamento para terapeutas de reprocessamento generativo, desenvolvido com MUI e foco em experiência do usuário.</p>
+                    <div class="project-tech">
+                        <span>Rails</span>
+                        <span>React</span>
+                        <span>MUI</span>
+                        <span>Redux</span>
+                    </div>
+                    <p class="project-period">2022 - Presente</p>
+                </div>
+            </div>
+
+            <!-- T2Educação -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(45deg, #2ECC71, #27AE60);">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title" data-lang-key="projects.t2.title">T2Educação - Certificações ANBIMA</h3>
+                    <p class="project-description" data-lang-key="projects.t2.description">Plataforma de treinamento para certificações ANBIMA, com dashboards interativos e views otimizadas de banco de dados para máxima performance.</p>
+                    <div class="project-tech">
+                        <span>Rails</span>
+                        <span>React</span>
+                        <span>Semantic UI</span>
+                        <span>Chart.js</span>
+                    </div>
+                    <p class="project-period">2022 - Presente</p>
+                </div>
+            </div>
+
+            <!-- Doce Futuro -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(45deg, #F1C40F, #F39C12);">
+                    <i class="fas fa-cookie"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title" data-lang-key="projects.docefuturo.title">Doce Futuro - Plataforma de Receitas</h3>
+                    <p class="project-description" data-lang-key="projects.docefuturo.description">Sistema de gerenciamento de receitas para confeiteiros, desenvolvido com Semantic UI e foco em usabilidade.</p>
+                    <div class="project-tech">
+                        <span>Rails</span>
+                        <span>React</span>
+                        <span>Semantic UI</span>
+                        <span>Redis</span>
+                    </div>
+                    <p class="project-period">2022 - 2023</p>
+                </div>
+            </div>
+
+            <!-- EMR -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(45deg, #3498DB, #2980B9);">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title" data-lang-key="projects.emr.title">EMR - Preparação para Residência Médica</h3>
+                    <p class="project-description" data-lang-key="projects.emr.description">Plataforma de preparação para provas de residência médica, com interface intuitiva e conteúdo especializado.</p>
+                    <div class="project-tech">
+                        <span>Rails</span>
+                        <span>React</span>
+                        <span>Semantic UI</span>
+                        <span>i18n</span>
+                    </div>
+                    <p class="project-period">2022</p>
+                </div>
+            </div>
+
+            <!-- ChatLead -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(45deg, #9B59B6, #8E44AD);">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title" data-lang-key="projects.chatlead.title">ChatLead - Atendimento Omnichat</h3>
+                    <p class="project-description" data-lang-key="projects.chatlead.description">Sistema de atendimento omnichat moderno, desenvolvido com RTK e Chakra UI para uma experiência fluida e responsiva.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>RTK</span>
+                        <span>Chakra UI</span>
+                        <span>TypeScript</span>
+                    </div>
+                    <p class="project-period">2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 data-lang-key="experience.title">Experiência</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 data-lang-key="experience.role">Desenvolvedor Full Stack</h3>
+                    <p class="company">Moblive</p>
+                    <p class="duration">2022 - Presente</p>
+                    <p class="description" data-lang-key="experience.description">Construindo e mantendo plataformas educacionais usando Ruby on Rails e React. Focado em criar soluções robustas, intuitivas e escaláveis que impactam a forma como milhares de pessoas aprendem e ensinam todos os dias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 data-lang-key="skills.title">Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">React Native</div>
+            <div class="skill-item">TypeScript</div>
+            <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">Ruby on Rails</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-lang-key="contact.title">Entre em Contato</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>mxreloaded.dev@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(81) 98477-1290</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Recife, PE</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/mxreloaded" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marcos-bernardo-jr-mxr21/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Marcos Bernardo Jr. <span data-lang-key="footer.rights">Todos os direitos reservados.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
